@@ -1,30 +1,20 @@
 <main>
-    <section>
+    <section class="container">
         <section class="section-menu">
             <!-- menu -->
             <app-logo></app-logo>
             <section class="section-menu-opciones">
-                <div *ngFor="let opcion of menu; let i = index;">
-                    <!-- icono -->
-                    <p> {{ opcion.titulo }} </p>
-                    <!-- ruta -->
+                <div class="opcion-menu" *ngFor="let opcion of menu; let i = index;">
+                    <a [routerLink]="opcion.ruta">
+                        <i *ngIf="!!opcion.icono" class="bi {{opcion.icono}}"></i>
+                        <i *ngIf="!opcion.icono" class="bi bi-activity"></i>
+                        <p> {{ opcion.titulo }} </p>
+                    </a>
                 </div>
             </section>
         </section>
-        <section>
-            <!-- perfil -->
-            <section>
-                <!-- info perfil -->
-            </section>
-            <section>
-                <!-- highlights -->
-            </section>
-            <section>
-                <!-- tabs -->
-            </section>
-            <section>
-                <!-- fotos de perfil -->
-            </section>
+        <section class="section-content">
+            <router-outlet></router-outlet>
         </section>
     </section>
     <footer>

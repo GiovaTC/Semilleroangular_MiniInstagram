@@ -2,43 +2,44 @@ import { MenuOption } from "../types/MenuOption.type"
 
 const menu: Array<MenuOption> = [
     {
-        icono: "",
+        icono: "bi-house",
         titulo: "Inicio",
+        ruta: ['/search']
     },
     {
-        icono: "",
+        icono: "bi-search",
         titulo: "Buscar",
-        ruta: ""
+        ruta: ['/explore']
     },
     {
-        icono: "",
+        icono: "bi-compass",
         titulo: "Explorar",
-        ruta: ""
+        ruta: ['']
     },
     {
-        icono: "",
+        icono: "bi-film",
         titulo: "Reels",
-        ruta: ""
+        ruta: ['']
     },
     {
-        icono: "",
+        icono: "bi-envelope",
         titulo: "Mensajes",
-        ruta: ""
+        ruta: ['']
     },
     {
-        icono: "",
+        icono: "bi-heart",
         titulo: "Notificaciones",
-        ruta: ""
+        ruta: ['']
     },
     {
-        icono: "",
+        icono: "bi-plus-square",
         titulo: "Crear",
-        ruta: ""
+        ruta: ['']
     },
     {
-        icono: "",
+        icono: "bi-person-bounding-box",
         titulo: "Perfil",
-        ruta: ""
+        ruta: ['']
     },
 ];
 
