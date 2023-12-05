@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import menu from "../assets/menu"
+import footer from "../assets/footer"
 
 @Component({
   selector: 'app-root',
@@ -9,6 +10,7 @@ import menu from "../assets/menu"
 export class AppComponent {
   title = 'Bienvenidos a mi perfil';
   menu = menu;
+  footer = footer;
 
   ngOnInit() {
     console.log("Hola desde mi componente, esto solo se vera un vez");

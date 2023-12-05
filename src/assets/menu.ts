@@ -4,42 +4,42 @@ const menu: Array<MenuOption> = [
     {
         icono: "bi-house",
         titulo: "Inicio",
-        ruta: ['/search']
+        ruta: ['/']
     },
     {
         icono: "bi-search",
         titulo: "Buscar",
-        ruta: ['/explore']
+        ruta: ['/search']
     },
     {
         icono: "bi-compass",
         titulo: "Explorar",
-        ruta: ['']
+        ruta: ['/explore']
     },
     {
         icono: "bi-film",
         titulo: "Reels",
-        ruta: ['']
+        ruta: ['/reels']
     },
     {
         icono: "bi-envelope",
         titulo: "Mensajes",
-        ruta: ['']
+        ruta: ['/messages']
     },
     {
         icono: "bi-heart",
         titulo: "Notificaciones",
-        ruta: ['']
+        ruta: ['/notifications']
     },
     {
         icono: "bi-plus-square",
         titulo: "Crear",
-        ruta: ['']
+        ruta: ['/new']
     },
     {
         icono: "bi-person-bounding-box",
         titulo: "Perfil",
-        ruta: ['']
+        ruta: ['/profile']
     },
 ];
 

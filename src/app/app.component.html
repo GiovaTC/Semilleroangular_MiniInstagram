@@ -18,6 +18,10 @@
         </section>
     </section>
     <footer>
-        <!-- info del footer -->
+        <div class="opcion-menu" *ngFor="let opcion of footer; let i = index;">
+            <a [routerLink]="opcion.ruta">
+                <p> {{ opcion.titulo }} </p>
+            </a>
+        </div>
     </footer>
 </main>

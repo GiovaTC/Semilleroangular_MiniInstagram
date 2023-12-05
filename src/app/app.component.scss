@@ -21,6 +21,8 @@ main {
                     a {
                         display: flex;
                         gap: 16px;
+                        color: white;
+                        text-decoration: none;
             
                         p {
                             font-weight: bold;
@@ -32,6 +34,19 @@ main {
         
         .section-content {
             padding-left: 16px;
+            padding-top: 16px;
+            width: 100%;
+        }
+    }
+    
+    footer {
+        display: flex;
+        justify-content: center;
+        gap: 16px;
+        
+        a {
+            color: gray;
+            text-decoration: none;
         }
     }
 }
