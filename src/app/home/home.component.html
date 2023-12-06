@@ -1,12 +1,26 @@
-<section>
+<section class="section-profile">
     <!-- info perfil -->
+    <div class="container-image">
+        <app-image [image]="account?.infoaccount?.imageProfile!"></app-image>
+    </div>
+    <section>
+        <div>
+            <p>{{ account?.username! }}</p>
+            <button>Editar perfil</button>
+            <button>Ver archivo</button>
+            <i class="bi bi-gear-wide"></i>
+        </div>
+        <div>
+            
+        </div>
+    </section>
 </section>
-<section>
+<section class="section-highlights">
     <!-- highlights -->
 </section>
-<section>
+<section class="section-tabs">
     <!-- tabs -->
 </section>
-<section>
+<section class="section-posts">
     <!-- fotos de perfil -->
 </section>

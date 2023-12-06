@@ -13,6 +13,9 @@ import { NewComponent } from './new/new.component';
 import { HomeComponent } from './home/home.component';
 import { VideoComponent } from './video/video.component';
 import { PostComponent } from './post/post.component';
+import { PersonalInformationService } from './services/personal-information.service';
+import { NetworkService } from './services/network.service';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -30,9 +33,10 @@ import { PostComponent } from './post/post.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    SharedModule
   ],
-  providers: [],
+  providers: [PersonalInformationService, NetworkService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

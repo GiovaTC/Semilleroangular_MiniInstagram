@@ -1,0 +1,27 @@
+.section-profile {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    .container-image {
+        width: 150px;
+        height: 150px;
+        padding: 32px;
+    }
+
+    section {
+        padding: 32px;
+
+        div {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            gap: 16px;
+            
+            button {
+                padding: 4px;
+                border-radius: 4px;
+            }
+        }
+    }
+}

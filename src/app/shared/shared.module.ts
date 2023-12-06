@@ -20,6 +20,14 @@ import { HighlightComponent } from './highlight/highlight.component';
   ],
   imports: [
     CommonModule
+  ],
+  exports: [
+    ImageComponent,
+    BadgeComponent,
+    ThumbnailComponent,
+    TabsComponent,
+    TabComponent,
+    HighlightComponent
   ]
 })
 export class SharedModule { }
