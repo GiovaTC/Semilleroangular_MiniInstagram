@@ -16,6 +16,7 @@ import { PostComponent } from './post/post.component';
 import { PersonalInformationService } from './services/personal-information.service';
 import { NetworkService } from './services/network.service';
 import { SharedModule } from './shared/shared.module';
+import { ImagePostComponent } from './image-post/image-post.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { SharedModule } from './shared/shared.module';
     NewComponent,
     HomeComponent,
     VideoComponent,
-    PostComponent
+    PostComponent,
+    ImagePostComponent
   ],
   imports: [
     BrowserModule,

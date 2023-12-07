@@ -6,6 +6,7 @@ import { ThumbnailComponent } from './thumbnail/thumbnail.component';
 import { TabsComponent } from './tabs/tabs.component';
 import { TabComponent } from './tab/tab.component';
 import { HighlightComponent } from './highlight/highlight.component';
+import { DetailPostComponent } from './detail-post/detail-post.component';
 
 
 
@@ -16,7 +17,8 @@ import { HighlightComponent } from './highlight/highlight.component';
     ThumbnailComponent,
     TabsComponent,
     TabComponent,
-    HighlightComponent
+    HighlightComponent,
+    DetailPostComponent
   ],
   imports: [
     CommonModule

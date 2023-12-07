@@ -8,7 +8,8 @@ import { NotificationsComponent } from './notifications/notifications.component'
 import { NewComponent } from './new/new.component';
 import { HomeComponent } from './home/home.component';
 import { VideoComponent } from './video/video.component';
-import { PostComponent } from './post/post.component';
+import { ImagePostComponent } from './image-post/image-post.component';
+import { DetailPostComponent } from './shared/detail-post/detail-post.component';
 
 const routes: Routes = [
   {
@@ -45,7 +46,7 @@ const routes: Routes = [
       },
       {
         path:"post",
-        component: PostComponent
+        component: ImagePostComponent
       },
     ]
   },
@@ -53,6 +54,16 @@ const routes: Routes = [
     path: "profile",
     component: HomeComponent
   },
+  {
+    path: "posts",
+    children: [
+      {
+        path: ":id",
+        component: DetailPostComponent
+      }
+    ]
+  },
+
 ];
 
 @NgModule({
