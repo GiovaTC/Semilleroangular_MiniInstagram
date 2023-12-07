@@ -10,8 +10,7 @@ export class ImageComponent {
   @Input("image")
   src: string = "";
 
-  ngOnInit() {
-    console.log("src", this.src)
-  }
+  @Input()
+  rounded: boolean = true;
 
 }

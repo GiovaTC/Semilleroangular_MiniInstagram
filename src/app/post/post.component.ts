@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-post',
@@ -7,4 +7,17 @@ import { Component } from '@angular/core';
 })
 export class PostComponent {
 
+  @Input()
+  post: any = {}
+
+  image: string = ""
+
+  ngOnInit() {
+    console.log("post", this.post)
+    if (!!this.post.images.length) {
+      this.image = this.post.images[0]
+    } else {
+      this.image = this.post.video[0]
+    }
+  }
 }

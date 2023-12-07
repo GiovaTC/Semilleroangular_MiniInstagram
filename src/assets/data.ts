@@ -60,6 +60,60 @@ export const data: any = {
                     description: "esto es un adelanto...",
                     video: ["https://picsum.photos/400/400"]
                 },
+                {
+                    id: 202320,
+                    images: ["https://picsum.photos/400/400"],
+                    description: "El sol brilla por que es de día",
+                    video: []
+                },
+                {
+                    id: 87843,
+                    images: ["https://picsum.photos/400/400","https://picsum.photos/400/400","https://picsum.photos/400/400"],
+                    description: "jojojo",
+                    video: []
+                },
+                {
+                    id: 70343,
+                    images: [],
+                    description: "esto es un adelanto...",
+                    video: ["https://picsum.photos/400/400"]
+                },
+                {
+                    id: 40595,
+                    images: ["https://picsum.photos/400/400"],
+                    description: "El sol brilla por que es de día",
+                    video: []
+                },
+                {
+                    id: 22222,
+                    images: ["https://picsum.photos/400/400","https://picsum.photos/400/400","https://picsum.photos/400/400"],
+                    description: "jojojo",
+                    video: []
+                },
+                {
+                    id: 100,
+                    images: [],
+                    description: "esto es un adelanto...",
+                    video: ["https://picsum.photos/400/400"]
+                },
+                {
+                    id: 2347,
+                    images: ["https://picsum.photos/400/400"],
+                    description: "El sol brilla por que es de día",
+                    video: []
+                },
+                {
+                    id: 200,
+                    images: ["https://picsum.photos/400/400","https://picsum.photos/400/400","https://picsum.photos/400/400"],
+                    description: "jojojo",
+                    video: []
+                },
+                {
+                    id: 33,
+                    images: [],
+                    description: "esto es un adelanto...",
+                    video: ["https://picsum.photos/400/400"]
+                },
             ],
         }
     ],

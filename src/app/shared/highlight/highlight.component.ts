@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-highlight',
@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./highlight.component.scss']
 })
 export class HighlightComponent {
+  @Input('src')
+  image: string = "/assets/plus.png"
 
+  @Input()
+  title: string = "Nueva"
 }

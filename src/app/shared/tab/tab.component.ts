@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-tab',
@@ -7,4 +7,15 @@ import { Component } from '@angular/core';
 })
 export class TabComponent {
 
+  @Input()
+  id: number = 0;
+
+  @Input()
+  title: string = `tab ${this.id}`;
+  
+  @Input()
+  icon: string = "bi-app";
+
+  @Input()
+  active: boolean = false;
 }

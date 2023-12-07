@@ -9,5 +9,5 @@ export class LogoComponent {
   img1 = "/assets/instagram-logo.svg";
   img2 = "/assets/facebook-logo.svg";
 
-  redSocial = false; // true = instagram, false = facebook
+  redSocial = true; // true = instagram, false = facebook
 }

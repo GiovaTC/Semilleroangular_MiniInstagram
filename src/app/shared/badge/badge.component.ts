@@ -10,4 +10,7 @@ export class BadgeComponent {
   @Input()
   content: string = "";
 
+  @Input()
+  color: string = "gray";
+
 }
