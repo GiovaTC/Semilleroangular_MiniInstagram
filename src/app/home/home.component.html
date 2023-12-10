@@ -35,7 +35,11 @@
 <section class="section-posts">
     <section class="grid-posts">
         <div *ngFor="let post of account!.posts; let i = index;">
-            <app-post [post]="post"></app-post>
-        </div>
-    </section>
+          <a [routerLink]="['/pagina']" [queryParams]="{ imageId: post.id }">
+            <app-post [post]="post">
+              <img [src]="getImageUrl(post.id, 406, 406)" alt="Descripción de la imagen">
+            </app-post>
+          </a>
+        </div>        
+      </section>
 </section>

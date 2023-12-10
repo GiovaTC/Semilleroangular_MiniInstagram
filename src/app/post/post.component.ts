@@ -6,11 +6,13 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./post.component.scss']
 })
 export class PostComponent {
-
+  selectedImageId: number | null = null;
   @Input()
   post: any = {}
-
+  @Input()
+  postId!: string;
   image: string = ""
+ 
 
   ngOnInit() {
     console.log("post", this.post)
@@ -18,6 +20,14 @@ export class PostComponent {
       this.image = this.post.images[0]
     } else {
       this.image = this.post.video[0]
+    }
+  }
+
+  getImageUrl(width?: number, height?: number): string {
+    if (this.selectedImageId !== null) {
+      return `https://picsum.photos/${width}/${height}`;
+    } else {
+      return `https://picsum.photos/${width}/${height}`;
     }
   }
 }

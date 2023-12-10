@@ -18,6 +18,8 @@ import { NetworkService } from './services/network.service';
 import { SharedModule } from './shared/shared.module';
 import { ImagePostComponent } from './image-post/image-post.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { PostDetailComponent } from './post-detail/post-detail.component';
+import { PostDataService } from './services/post-data.service';
 
 @NgModule({
   declarations: [
@@ -33,14 +35,15 @@ import { NotFoundComponent } from './not-found/not-found.component';
     VideoComponent,
     PostComponent,
     ImagePostComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    PostDetailComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     SharedModule
   ],
-  providers: [PersonalInformationService, NetworkService],
+  providers: [PersonalInformationService, NetworkService, PostDataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

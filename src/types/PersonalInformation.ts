@@ -17,6 +17,7 @@ type Highlights = {
 }
 
 type Post = {
+id: any
     multiple: boolean,
     isVideo: boolean,
     creation: string,

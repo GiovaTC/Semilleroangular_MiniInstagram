@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { PersonalInformationService } from '../services/personal-information.service';
 import { PersonalInformationType } from '../../types/PersonalInformation';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-home',
@@ -42,7 +44,8 @@ export class HomeComponent {
     },
   ]
 
-  constructor(private personalInformation: PersonalInformationService) {}
+  constructor(private personalInformation: PersonalInformationService, private router:Router) {}
+  
 
   ngOnInit() {
     this.account = this.personalInformation.getPersonalInformation();
@@ -55,6 +58,13 @@ export class HomeComponent {
                     : `${this.account!.infoaccount.publicaciones} publicaciones` })) 
     this.threads = { ...this.threads, username: `${this.threads.username} ${this.account!.threads.username}` }
     console.log("this.account", this.account)
+  }
+
+  navigateToPost(postId: string) {
+    this.router.navigate(['/posts', postId]);
+  }
+  getImageUrl(id: string, width: number, height: number): string {
+    return `https://picsum.photos/${width}/${height}`;
   }
 
 }
