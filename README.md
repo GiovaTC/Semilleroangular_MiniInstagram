@@ -1,4 +1,5 @@
 # MiniInstagram
+![EvidenciaFuncionamiento](https://github.com/GiovaTC/Semilleroangular_MiniInstagram/assets/90740161/0856b5f3-2544-4ad2-90d6-97735f4176d3)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.9.
 
