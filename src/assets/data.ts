@@ -8,8 +8,8 @@ export const data: any = {
         {
             isLogged: true,
             personal: {
-                username: "tw1ttt3r",
-                name: "Peter",
+                username: "gtapiero",
+                name: "Giovanny",
                 birthday: "21/11/1990",
             },
             account: {
@@ -19,7 +19,7 @@ export const data: any = {
                 posts: 470,
                 threads: {
                     actived: true,
-                    username: "tw1ttt3r",
+                    username: "gtapiero",
                     created: "23/03/2023 08:45:09"
                 },
                 highlights: [
